@@ -8,6 +8,8 @@
 
 [![support level: community](https://img.shields.io/badge/support%20level-community-lightgray.svg)](http://rosindustrial.org/news/2016/10/7/better-supporting-a-growing-ros-industrial-software-platform)
 
+> :warning: These packages are modified to awkwardly support manual mode on [abb_robot_driver](https://github.com/alessioprini/abb_robot_driver)
+
 ## Important Notes
 
 RobotWare versions `7.0` and higher are currently incompatible with *abb_librws* (due to RWS `1.0` being replaced by RWS `2.0`). See [this](http://developercenter.robotstudio.com/webservice) for more information about the different RWS versions.
