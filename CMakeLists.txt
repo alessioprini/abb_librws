@@ -62,6 +62,8 @@ if(NOT BUILD_SHARED_LIBS)
   target_compile_definitions(${PROJECT_NAME} PUBLIC "ABB_LIBRWS_STATIC_DEFINE")
 endif()
 
+target_compile_definitions(${PROJECT_NAME} PRIVATE BYPASS_AUTO_MODE)
+
 #############
 ## Install ##
 #############

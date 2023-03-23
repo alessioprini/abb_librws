@@ -765,8 +765,10 @@ bool RWSStateMachineInterface::toggleIOSignal(const std::string& iosignal)
   bool result = false;
   int max_number_of_attempts = 5;
 
+#ifndef BYPASS_AUTO_MODE
   if (isAutoMode().isTrue())
   {
+#endif
     for (int i = 0; i < max_number_of_attempts && !result; ++i)
     {
       result = setIOSignal(iosignal, SystemConstants::IOSignals::LOW);
@@ -789,7 +791,9 @@ bool RWSStateMachineInterface::toggleIOSignal(const std::string& iosignal)
         }
       }
     }
+#ifndef BYPASS_AUTO_MODE
   }
+#endif
 
   return result;
 }
